@@ -12,7 +12,8 @@ pip install git+https://github.com/Sorrawichsu/gcheck_test.git
 Or via Homebrew:
 
 ```bash
-brew install sorrawichsu/gcheck/gcheck
+brew tap sorrawichsu/gcheck https://github.com/Sorrawichsu/gcheck_test
+brew install gcheck
 ```
 
 ## Setup
