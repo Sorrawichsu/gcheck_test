@@ -5,13 +5,28 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "gcheck"
 version = "0.1.0"
+description = "Check if websites are accessible, and query a Google genai agent, from the command line"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Sorrawichsu" }]
 requires-python = ">=3.12"
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
 dependencies = [
     "google-genai",
     "typer",
     "rich",
     "python-dotenv",
+    "httpx",
 ]
 
+[project.urls]
+Homepage = "https://github.com/Sorrawichsu/gcheck_test"
+
 [project.scripts]
-gcheck = "main:app"
+gcheck = "gcheck.cli:app"

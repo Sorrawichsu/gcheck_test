@@ -2,3 +2,4 @@ google-genai
 typer
 rich
 python-dotenv
+httpx
