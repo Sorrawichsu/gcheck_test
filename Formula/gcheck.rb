@@ -7,8 +7,8 @@ class Gcheck < Formula
   sha256 "77b79be8ae88cd1b48675f94a0f64da923e9a7d259681523c4338aa0fe1ed2f8"
   license "MIT"
 
-  depends_on "openssl@3"
   depends_on "rust" => :build # needed to build the `cryptography` dependency from source
+  depends_on "openssl@3"
   depends_on "python@3.12"
 
   resource "annotated-doc" do
